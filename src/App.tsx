@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import SourceTarget from "./components/SourceTarget";
+import SourceTarget from "./components/SourceAndTarget";
 
 function App() {
   const webApp = Telegram.WebApp;
