@@ -21,7 +21,7 @@ export default function InputField({
           {label}
         </label>
       <input
-          className="flex-1 h-[48px] text-[32px] bg-[#F5F8FA] w-full"
+          className="flex-1 h-[48px] text-[32px] bg-[#F5F8FA] w-full outline-none"
           name={name}
           type="number"
           placeholder="0"

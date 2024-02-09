@@ -15,7 +15,7 @@ export default function SelectCurrency({ value, onChange }: Props) {
 
   return (
     <select
-      className="pl-[16px] py-2 rounded-full bg-[#F5F8FA] text-[18px] border-r-[12px] border-transparent outline outline-2 outline-neutral-300"
+      className="pl-[16px] py-2 rounded-full bg-[#F5F8FA] text-[18px] border-r-[12px] border-transparent ring-2 ring-neutral-300"
       value={value}
       onChange={handleChange}
     >
