@@ -1,4 +1,4 @@
-import { useApp } from "../lib/AppContext";
+import { useApp } from "../lib/context/AppContext";
 
 interface Props {
   value: number;

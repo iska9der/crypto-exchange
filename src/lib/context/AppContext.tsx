@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useEffect, useState } from "react";
-import { mockCurrencies } from "./mock";
-import { Currency } from "./types";
+import { mockCurrencies } from "../mock";
+import { Currency } from "../types";
 
 interface AppData {
   currencies: Currency[];

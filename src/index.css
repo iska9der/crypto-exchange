@@ -1,9 +1,22 @@
 @tailwind base;
 @tailwind utilities;
 
+/* Telegram Mini App Theme Colors */
+:root {
+  --tg-color-scheme: light !important;
+  --tg-theme-bg-color: #fff !important;
+  --tg-theme-text-color: #3e3f40 !important;
+  --tg-theme-hint-color: #7d858a !important;
+  --tg-theme-link-color: #207ae4 !important;
+  --tg-theme-button-color: #2585bb !important;
+  --tg-theme-button-disabled-color: #d5dee3 !important;
+  --tg-theme-button-text-color: #f5f8fa !important;
+  --tg-theme-button-disabled-text-color: #3e3f40 !important;
+  --tg-theme-secondary-bg-color: #f3f2f9 !important;
+}
 
-input[type='number'] {
-  -moz-appearance:textfield;
+input[type="number"] {
+  -moz-appearance: textfield;
 }
 
 input::-webkit-outer-spin-button,
@@ -11,20 +24,28 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
 
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
 input {
   min-width: 0;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.content_wrapper {
+  height: 100vh;
+  box-sizing: border-box;
+  background: var(--tg-theme-bg-color) !important;
+  color: var(--tg-theme-text-color) !important;
+  padding: 20px;
 }

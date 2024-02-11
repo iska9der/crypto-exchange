@@ -1,17 +1,20 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App";
+import App from "./components/App";
 import "./index.css";
-import { AppProvider } from "./lib/AppContext";
+import { AppProvider } from "./lib/context/AppContext";
+import { TgProvider } from "./lib/context/TgContext";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <AppProvider>
-      <App />
-    </AppProvider>
+    <TgProvider>
+      <AppProvider>
+        <App />
+      </AppProvider>
+    </TgProvider>
   </React.StrictMode>
 );
 

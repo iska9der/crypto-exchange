@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useDebouncedCallback } from "use-debounce";
-import { useApp } from "../lib/AppContext";
+import { useApp } from "../lib/context/AppContext";
 import InputField from "./InputField";
 import SelectCurrency from "./SelectCurrency";
 
@@ -21,7 +21,7 @@ export default function SourceTarget() {
     (currencyId: number, value: number, setValue: (value: number) => void) => {
       fetchExchangeData(currencyId, value, setValue);
     },
-    1500
+    1300
   );
 
   const fetchExchangeData = async (
